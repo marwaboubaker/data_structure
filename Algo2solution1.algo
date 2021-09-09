@@ -30,7 +30,7 @@ BEGIN
     set_keys := dict.getKeys();
     FOR i FROM 0 TO set_keys.length -1 STEP 1  DO
         IF (dict.get(set_keys[i]) > 1) THEN
-            sum := sum +set_keys[i];
+            sum := (sum +set_keys[i])*2;
         END_IF
     END_FOR
 
